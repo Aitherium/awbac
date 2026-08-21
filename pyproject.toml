@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awbac"
+version = "0.1.0"
+description = "Role-based access control that fails closed and explains itself — segment-aware permissions, because prefix matching grants what it should refuse."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+# No dependencies. An authorization decision that needs a service to answer is
+# one that fails open the moment the service is unreachable.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+awbac = "awbac.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Aitherium/awbac"
+Documentation = "https://github.com/Aitherium/awbac#readme"
+Repository = "https://github.com/Aitherium/awbac.git"
+Issues = "https://github.com/Aitherium/awbac/issues"
+
+[tool.setuptools]
+packages = ["awbac"]
