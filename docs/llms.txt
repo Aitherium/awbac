@@ -1,0 +1,29 @@
+# awbac
+
+> Role-based access control that fails closed and explains itself.
+
+Most authz answers "no" without saying why, so every denial becomes a debugging session — and the ones that fail OPEN never announce themselves at all.
+
+## Install
+
+```
+pip install awbac
+```
+
+## Use it in 30 seconds
+
+Gate one endpoint and read the explanation it gives for a denial.
+
+## Composes with
+
+- [awdit](https://aitherium.github.io/awdit/) — An append-only audit trail whose gaps are DETECTABLE.
+
+## Where it lives
+
+- Repo: https://github.com/Aitherium/awbac
+- Docs: https://aitherium.github.io/awbac/
+- Manifest (keys + the one-line adoption story): https://aitherium.github.io/awbac/aither-manifest.json
+
+This repository is mirrored from the AitherOS monorepo by `.github/workflows/sync-awbac.yml`; hand edits made here are overwritten on the next sync — change the source instead.
+
+Everything Aitherium, in one file for agents: https://aitherium.com/llms.txt
